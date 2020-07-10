@@ -10,4 +10,6 @@ resolvers ++= Seq(
   "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 )
 
+libraryDependencies += "commons-io" % "commons-io" % "2.4" 
+
 fork := false
