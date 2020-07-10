@@ -116,6 +116,7 @@ class FileSystem (val root: String) {
                 val nstate = if (c.n == 1) new Idle else new Copying(c.n - 1)
                 if (!entry.state.compareAndSet(c, nstate)) release(entry)
             }
+            case _ =>
         }
     }
 
